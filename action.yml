@@ -5,11 +5,11 @@ inputs:
   DATASET:
     description: "Training Dataset"
     required: true
-    default: "juice"
+    default: "boston"
   TARGET:
     description: "Target Variable"
     required: true
-    default: "Purchase"     
+    default: "tax"     
   USECASE:
     description: "Use-case Classification or Regression"
     required: true
