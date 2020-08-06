@@ -1,0 +1,25 @@
+name: "PyCaret-Docker Git Action AutoML Example"
+description: "AutoML using PyCaret 2.0"
+author: "Joseph Edward"
+inputs:
+  DATASET:
+    description: "Training Dataset"
+    required: true
+    default: "juice"
+  TARGET:
+    description: "Target Variable"
+    required: true
+    default: "Purchase"     
+  USECASE:
+    description: "Use-case Classification or Regression"
+    required: true
+    default: "classification"     
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: 'box'
+  color: 'blue'
